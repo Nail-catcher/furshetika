@@ -28,7 +28,7 @@ class MainController extends Controller
 
     public function order(Request $request)
     {
-
+        $phone = preg_replace("/[^.0-9]/", '', $request['phone']);
         if($request['payment1']){
            $payment = "Наличные";
         } elseif ($request['payment2']){
@@ -39,7 +39,7 @@ class MainController extends Controller
         $order=new Order([
             'peoples'=>$request['count'],
             'name'=>$request['name'],
-            'phone'=>$request['phone'],
+            'phone'=>$phone,
             'address'=> $request['address'],
             'date'=> $request['date'],
             'email'=> $request['email'],
@@ -58,7 +58,7 @@ class MainController extends Controller
         $data = [
             'peoples'=>(string)$request['count'],
             'name'=>(string)$request['name'],
-            'phone'=>(string)$request['phone'],
+            'phone'=>(string)$phone,
             'address'=> (string)$request['address'],
             'date'=> (string)$request['date'],
             'email'=> (string)$request['email'],
@@ -67,8 +67,8 @@ class MainController extends Controller
             'payment'=> (string)$payment,
             'prods' =>$prods,
         ];
-        Mail::to('nikita-mokin@mail.ru')->send(new OrderMailer($data));
-
+        Mail::to(['nikita-mokin@mail.ru','kaktuz.zzz92@gmail.com'])->send(new OrderMailer($data));
+//89884602288@mail.ru
 
         if($request['payment1']){
         return redirect()->to('/');
