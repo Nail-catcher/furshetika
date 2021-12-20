@@ -67,7 +67,7 @@ class MainController extends Controller
             'payment'=> (string)$payment,
             'prods' =>$prods,
         ];
-        Mail::to(['nikita-mokin@mail.ru','kaktuz.zzz92@gmail.com'])->send(new OrderMailer($data));
+        Mail::to(['nikita-mokin@mail.ru','89884602288@mail.ru'])->send(new OrderMailer($data));
 //89884602288@mail.ru
 
         if($request['payment1']){
