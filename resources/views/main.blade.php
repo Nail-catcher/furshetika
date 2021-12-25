@@ -23,12 +23,15 @@
 
 
                         <h3 class="item_title">{{$set->name}}</h3>
+
+                        <div class="sets-ss">
                         <div class="sets-price">
                             <h5><span class="item_price">{{$set->price}}</span> ₽</h5><h5 style="margin-left: 15%;"><span class="item_weight">{{$set->weight}}</span> гр.</h5>
                         </div>
                         <input type="number" class="item_count" value="1">
                         <div class="sets-button" data-id="{{$set->id}}">
                         <a>В Корзину</a>
+                        </div>
                         </div>
                     </div>
                                     </div>
@@ -57,12 +60,14 @@
                     <a href="/product/{{$product->id}}"><img src="{{ asset($product->image) }}" alt=""></a>
 
                     <h3 class="item_title">{{$product->name}}</h3>
+                    <div class="sets-ss">
                     <div class="sets-price">
                         <h5><span class="item_price">{{$product->price}}</span> ₽</h5><h5 style="margin-left: 15%;"><span class="item_weight">{{$product->weight}}</span> гр.</h5>
                     </div>
                     <input type="number" class="item_count" value="1">
                     <div class="sets-button" data-id="{{$product->id}}">
                         <a  >В Корзину</a>
+                    </div>
                     </div>
                 </div>
 

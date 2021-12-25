@@ -51,7 +51,7 @@
             <div class="hline">
                 <div class="hline-ss"><a href="https://instagram.com/furshetika?utm_medium=copy_link" target="_blank"><img src="../images/inst.png" alt=""></a></div>
                 <div class="hline-logo"><a href="{{ url('/') }}"><img src="../images/logo.png" alt=""></a></div>
-                <div class="hline-adr"><img src="../images/geo.png" alt=""><p>Ставропольская 20<p></p></div>
+                <div class="hline-adr"><img src="../images/geo.png" alt=""><p>   +79884602288<p></p></div>
             </div>
             @yield('content')
 

@@ -75,12 +75,16 @@ footer{
     text-align: center;
 }
 .sets-card{
+
     float: left;
     margin-top: 6%;
     margin-left: 10%;
     width: 20%;
-    height: 400px;
+    height: 550px;
     /*border: black solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #set {
     width: 300px;
@@ -89,20 +93,21 @@ footer{
     /*border: black solid 1px;*/
 }
 .sets-card img{
-    width: 100%;
-    height: 70%;
+    width: 75%;
+    height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
 }
+
 .sets-card h3{
     font-size: 1.9rem;
     text-align: center;
 }
 .sets-button{
-    width: 100%;
-    background-color: red;
+    
+    background-color: #7B001C;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -154,7 +159,7 @@ footer{
 
     
 
-    height: 190px;
+    height: 270px;
     white-space:nowrap;
 }
 .hline-ss{
@@ -184,27 +189,27 @@ footer{
     width: 8%;
     display: block;
     margin: 0 auto;
-    margin-top: 11% ;
+    margin-top: 19% ;
 }
 .hline-logo img {
 
     display: block;
     margin: 0 auto;
-    margin-top: -3% ;
+    margin-top: 2% ;
     width: 38%;
 }
 .hline-adr img {
     float: left;
     width: 8%;
     margin-left: 21% ;
-    margin-top: 11% ;
+    margin-top: 19% ;
 
 }
 .hline-adr p {
     float: left;
-    margin-top: 11% ;
-    
-    font-size: 2.3rem;
+    margin-top: 19% ;
+    margin-left: 3% ;
+    font-size: 1.9rem;
 }
 
 /* User styles */
@@ -318,7 +323,7 @@ span.ant-dot {
 }
 #send_button{
     width: 250px;
-    background-color: red;
+    background-color: #7B001C;
     text-align: center;
     display: block;
 
