@@ -20,7 +20,8 @@ Route::get('/endorder', [App\Http\Controllers\MainController::class, 'endOrder']
 Route::post('/order', [App\Http\Controllers\MainController::class, 'order'])->name('order');
 Route::get('/cardpay', [App\Http\Controllers\MainController::class, 'cardpay'])->name('cardpay');
 Route::get('/info', [App\Http\Controllers\InfoController::class, 'index'])->name('info');
-
+//Route::get('/altorder', [App\Http\Controllers\AltOrderController::class, 'index'])->name('info');
+Route::resource('/altorder',App\Http\Controllers\AltOrderController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

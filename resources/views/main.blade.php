@@ -9,9 +9,9 @@
                  </div>
         </header>
         <div class="background-sets">
-        <h1 id="seto">СЕТЫ</h1>
+        <h1 id="seto">БОКСЫ</h1>
             <div class="sets">
-                <h2>Готовые варианты фуршетов</h2>
+                <h2>Готовые наборы блюд</h2>
                 <div class="sets-corusel">
                     <div class="ant-carousel">
                         <div class="ant-carousel-hider">
@@ -49,7 +49,7 @@
         </div>
 
         <div class="background-products">
-        <h1  id="product">ТОВАРЫ</h1>
+        <h1  id="product">МЕНЮ</h1>
         <div class="products">
         <h2>Создайте свой фуршет</h2>
         <div class="sets-corusel">

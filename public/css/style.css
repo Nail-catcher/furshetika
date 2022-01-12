@@ -65,7 +65,7 @@ footer{
 .background-sets h1 {
     font-size: 4.3rem;
     transform: skew(0, 7deg);
-    margin-left: 90%;
+    margin-left: 78%;
     margin-top: 3.5%;
 }
 .sets {
@@ -107,7 +107,7 @@ footer{
 }
 .sets-button{
     
-    background-color: #7B001C;
+    background-color: #277b29;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -126,7 +126,7 @@ footer{
 
     font-size: 5.3rem;
 
-    margin-left: 80%;
+    margin-left: 78%;
     margin-top: -2.5%;
 }
 .item_count {
@@ -159,7 +159,7 @@ footer{
 
     
 
-    height: 270px;
+    height: 300px;
     white-space:nowrap;
 }
 .hline-ss{
@@ -195,7 +195,7 @@ footer{
 
     display: block;
     margin: 0 auto;
-    margin-top: 2% ;
+    margin-top: 6% ;
     width: 38%;
 }
 .hline-adr img {
@@ -323,7 +323,15 @@ span.ant-dot {
 }
 #send_button{
     width: 250px;
-    background-color: #7B001C;
+    background-color: #277b29;
+    text-align: center;
+    display: block;
+
+    font-size: 1.9rem;
+}
+#alt_send_button{
+    width: 250px;
+    background-color: #277b29;
     text-align: center;
     display: block;
 

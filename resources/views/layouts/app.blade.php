@@ -29,13 +29,16 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <a class="navbar-brand" href="{{ url('/#set') }}">
-                    Сеты
+                    Боксы
                 </a>
                 <a class="navbar-brand" href="{{ url('/#product') }}">
-                    Товары
+                    Меню
+                </a>
+                <a class="navbar-brand" href="{{ url('/altorder') }}">
+                    Альтернативный заказ
                 </a>
                 <a class="navbar-brand" href="{{ url('/info') }}">
-                    Информация
+                    Наши услуги
                 </a>
                 <div id="cart_content"></div>
                 <a class="navbar-brand" id="checkout" href="#">
@@ -51,7 +54,7 @@
             <div class="hline">
                 <div class="hline-ss"><a href="https://instagram.com/furshetika?utm_medium=copy_link" target="_blank"><img src="../images/inst.png" alt=""></a></div>
                 <div class="hline-logo"><a href="{{ url('/') }}"><img src="../images/logo.png" alt=""></a></div>
-                <div class="hline-adr"><img src="../images/geo.png" alt=""><p>   +79884602288<p></p></div>
+                <div class="hline-adr"><img src="../images/geo.png" alt=""><p>   +7 918 045 88 55<p></p></div>
             </div>
             @yield('content')
 
