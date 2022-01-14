@@ -21,10 +21,10 @@
                     <div class="sets-card" id="set">
                         <a href="/product/{{$set->id}}"><img src="{{ asset($set->image) }}" alt=""></a>
 
-
+                            <div class="sets-ss">
                         <h3 class="item_title">{{$set->name}}</h3>
 
-                        <div class="sets-ss">
+
                         <div class="sets-price">
                             <h5><span class="item_price">{{$set->price}}</span> ₽</h5><h5 style="margin-left: 15%;"><span class="item_weight">{{$set->weight}}</span> гр.</h5>
                         </div>
@@ -32,6 +32,8 @@
                         <div class="sets-button" data-id="{{$set->id}}">
                         <a>В Корзину</a>
                         </div>
+
+
                         </div>
                     </div>
                                     </div>
@@ -58,9 +60,9 @@
 
                 <div class="sets-card">
                     <a href="/product/{{$product->id}}"><img src="{{ asset($product->image) }}" alt=""></a>
-
-                    <h3 class="item_title">{{$product->name}}</h3>
                     <div class="sets-ss">
+                    <h3 class="item_title">{{$product->name}}</h3>
+
                     <div class="sets-price">
                         <h5><span class="item_price">{{$product->price}}</span> ₽</h5><h5 style="margin-left: 15%;"><span class="item_weight">{{$product->weight}}</span> гр.</h5>
                     </div>

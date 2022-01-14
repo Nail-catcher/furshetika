@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
+    <script charset="UTF-8" src="http://127.0.0.25/storage/push/76e0c4900e8ecf6a31c9e04ce341f82918ab33d4938c3a193408087b24fe90bd.js" async></script>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Yandex.Metrika counter -->
@@ -108,12 +108,13 @@
             var cartData = getCartData() || {}, // получаем данные корзины или создаём новый объект, если данных еще нет
                 parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
                 itemId = this.getAttribute('data-id'), // ID товара
+
                 itemTitle = parentBox.querySelector('.item_title').innerHTML, // название товара
                 itemPrice = parentBox.querySelector('.item_price').innerHTML,
                 itemWeight = parentBox.querySelector('.item_weight').innerHTML,// стоимость товара
                 itemCount = parentBox.querySelector('.item_count').value;
                 cartData[itemId] = [itemTitle, itemPrice,itemCount,itemWeight];
-
+            console.log(parentBox.querySelector('.item_title'));
             if(!setCartData(cartData)){ // Обновляем данные в LocalStorage
                 this.disabled = false; // разблокируем кнопку после обновления LS
             }
