@@ -13,7 +13,9 @@
             $table->text('comm')->nullable();--}}
 
 
-        <div class="offers" style=" margin:0 0 0 37%;" >
+        <div class="offers"  >
+            <h2>
+            <a href="{{asset('images/pdf.pdf')}}" target="_blank">Открыть меню</a></h2>
             <form action="">
                 <label for="name">ФИО</label><br>
                 <input name="name" id="name" type="text" style="width:450px"><br>
@@ -31,11 +33,11 @@
                 <textarea name="event" id="event" style="width:450px"></textarea><br>
                 <label for="comm">Комментарий</label><br>
                 <textarea name="comm" id="comm" style="width:450px"></textarea><br>
-                <label for="menu">Меню <a href="{{asset('images/pdf.pdf')}}" target="_blank">Открыть</a></label><br>
+                <label for="menu">Меню </label><br>
                 <textarea name="menu" id="menu" style="width:450px"></textarea><br>
 
                 
-                <a id="alt_send_button" style="background-color: red; width:450px; ">Отправить заказ</a>
+                <a id="alt_send_button" style="background-color:  #277b29; width:450px; ">Отправить заказ</a>
             </form>
 
 

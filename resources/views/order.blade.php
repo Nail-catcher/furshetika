@@ -39,7 +39,7 @@
                 {{--<input type="radio" id="contactChoice3"--}}
                        {{--name="payment" value="org">--}}
                 {{--<label for="contactChoice3">Счёт организации</label><br>--}}
-                <a id="send_button" style="background-color: red; ">Оформить</a>
+                <a id="send_button" style="background-color: #277b29; ">Оформить</a>
             </form>
 
 

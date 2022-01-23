@@ -205,6 +205,9 @@ footer{
     margin-top: 19% ;
 
 }
+#checkout-mob {
+    display:none;
+}
 .hline-adr p {
     float: left;
     margin-top: 19% ;
@@ -339,4 +342,59 @@ span.ant-dot {
 }
 .catering img {
     width: 50%;
+}
+.offers {
+    margin:0 0 0 37%;
+}
+@media screen and (max-width: 640px) {
+    header {
+       display:none;
+    }
+    .hline-ss{
+        display:none;
+    }
+    .hline-adr{
+        display:none;
+    }
+    #navbar-logo{
+        display:none;
+    }
+    #navbar-set{
+        display:none;
+    }
+    /*#navbar-info{*/
+        /*display:none;*/
+    /*}*/
+    #navbar-prod,#seto, #product,#checkout{
+        display:none;
+    }
+    #checkout-mob{
+        float: right;
+        position:fixed;
+        display:block;
+        margin-top: 13%;
+    }
+    .hline-logo{
+        position: relative;
+        float: left;
+        margin-top: 20%;
+        height: 100%;
+        width:100%;
+        display:inline-block;
+    }
+    .sets-card {
+        width: 270px;
+    }
+    .background-products{
+        margin-top: 10%;
+    }
+    .container{
+        height: 90px;
+    }
+    .offers {
+        margin:0 0 0 0;
+    }
+    #cartNew{
+        margin:0 0 0 0;
+    }
 }

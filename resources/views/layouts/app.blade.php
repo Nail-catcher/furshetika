@@ -39,26 +39,28 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-grey shadow-sm" style="position: fixed; z-index: 8; width: 100%">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" id="navbar-logo" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                <a class="navbar-brand" href="{{ url('/#set') }}">
+                <a class="navbar-brand" id="navbar-set" href="{{ url('/#set') }}">
                     Боксы
                 </a>
-                <a class="navbar-brand" href="{{ url('/#product') }}">
+                <a class="navbar-brand" id="navbar-prod" href="{{ url('/#product') }}">
                     Меню
                 </a>
-                <a class="navbar-brand" href="{{ url('/altorder') }}">
+                <a class="navbar-brand" id="navbar-alt" href="{{ url('/altorder') }}">
                     Альтернативный заказ
                 </a>
-                <a class="navbar-brand" href="{{ url('/info') }}">
+                <a class="navbar-brand" id="navbar-info" href="{{ url('/info') }}">
                     Наши услуги
                 </a>
                 <div id="cart_content"></div>
                 <a class="navbar-brand" id="checkout" href="#">
                     Корзина
                 </a>
-
+                <a class="navbar-brand" id="checkout-mob" href="{{ url('/endorder') }}">
+                    Корзина
+                </a>
 
             </div>
 
